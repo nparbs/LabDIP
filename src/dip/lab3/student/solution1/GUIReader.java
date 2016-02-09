@@ -5,20 +5,17 @@
  */
 package dip.lab3.student.solution1;
 
+import javax.swing.JOptionPane;
+
 /**
  *
- * @author Nick
+ * @author nparbs
  */
-public class Startup {
-    
-    public static void main(String[] args) {
-        
-        Reader[] readers = {new GUIReader(), new TextReader()};
-        
-        for(Reader r : readers) {
-           r.readln();
-        }
-        
+public class GUIReader implements Reader {
+
+    @Override
+    public String readln() {
+        return JOptionPane.showInputDialog(null, "Enter message here:");
     }
     
 }

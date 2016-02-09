@@ -9,16 +9,9 @@ package dip.lab3.student.solution1;
  *
  * @author Nick
  */
-public class Startup {
-    
-    public static void main(String[] args) {
-        
-        Reader[] readers = {new GUIReader(), new TextReader()};
-        
-        for(Reader r : readers) {
-           r.readln();
-        }
-        
-    }
-    
+public class TextWriter implements Writer {
+
+	public void writeln( String line ) {
+            System.out.println( line );
+	}
 }

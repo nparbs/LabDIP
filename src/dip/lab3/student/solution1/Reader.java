@@ -7,8 +7,9 @@ package dip.lab3.student.solution1;
 
 /**
  *
- * @author Nick
+ * @author nparbs
  */
-public class ReadWriteInterface {
-    
+public interface Reader {
+
+	public abstract String readln();
 }

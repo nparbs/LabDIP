@@ -5,10 +5,18 @@
  */
 package dip.lab3.student.solution1;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Nick
  */
-public class TextReader {
-    
+public class TextReader implements Reader {
+
+	public String readln() {
+            System.out.println("Please enter text, then press enter.");
+
+            Scanner input = new Scanner(System.in);
+            return input.nextLine();
+	}
 }
