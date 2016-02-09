@@ -22,9 +22,14 @@ import javax.swing.JOptionPane;
 public class Startup {
  
     public static void main(String[] args) {
-        TipCalculator tipCalc = new FoodServiceTipCalculator(ServiceQuality.GOOD,50);
+        TipCalculator foodtipCalc = 
+                new FoodServiceTipCalculator(ServiceQuality.FAIR,50);
         
-        System.out.println(tipCalc.getTip());
+        TipCalculator bagtipCalc = 
+                new FoodServiceTipCalculator(ServiceQuality.GOOD,8);
+        
+        System.out.println(foodtipCalc.getTip());
+        System.out.println(bagtipCalc.getTip());
     }
 
 }
