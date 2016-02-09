@@ -32,9 +32,8 @@ public class Startup {
             nf.format(hr.getAnnualCompensationForEmployee(emp1)));
         System.out.println("Employee 2 annual compensation: " +
             nf.format(hr.getAnnualCompensationForEmployee(emp2)));
-        System.out.println("Employee 3 annual compensation: " +
-            nf.format(hr.getAnnualCompensationForEmployee(emp3,
-            HRService.SALARIED_TYPE)));
+        //System.out.println("Employee 3 annual compensation: " +
+        //    nf.format(hr.getAnnualCompensationForEmployee(emp3)));
         
     }
 

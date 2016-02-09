@@ -37,7 +37,7 @@ public class HRService {
      * (see above) should be used for this, but can you guarantee it will be?
      * Are there other options? Hint: enum
      * @return the annual compensation for supported employee types
-     */
+     
     public double getAnnualCompensationForEmployee(Employee e,
             String employeeType)
     {
@@ -57,7 +57,7 @@ public class HRService {
         }
 
         return annualCompensation;
-    }
+    }*/
 
 
     /**
@@ -67,7 +67,7 @@ public class HRService {
      * @return the annual compensation for supported employee types
      */
     public double getAnnualCompensationForEmployee(Employee e) {
-        double annualCompensation = 0;
+       /* double annualCompensation = 0;
 
         // One example of using fragile if logic to determine employee type.
         // If only we could use polymorphism!
@@ -84,6 +84,8 @@ public class HRService {
                     null, ERROR_MSG, ERROR_TITLE, JOptionPane.ERROR_MESSAGE);
         }
 
-        return annualCompensation;
+        return annualCompensation;*/
+
+        return e.getAnnualWages();
     }
 }
