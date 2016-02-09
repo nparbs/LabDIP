@@ -11,25 +11,18 @@ import dip.lab2.*;
  * @author your name goes here
  */
 public class BaggageServiceTipCalculator implements TipCalculator {
-    private static final double MIN_BILL = 0.00;
-    private static final double MAX_BILL = 100.00;
-    private static final String BILL_ENTRY_ERR =
+    private double MIN_BILL = 0.00;
+    private double MAX_BILL = 100.00;
+    private String BILL_ENTRY_ERR =
             "Error: bill must be between " + MIN_BILL + " and "
             + MAX_BILL;
-    private static final double GOOD_RATE = 0.20;
-    private static final double FAIR_RATE = 0.15;
-    private static final double POOR_RATE = 0.10;
+    private double GOOD_RATE = 0.20;
+    private double FAIR_RATE = 0.15;
+    private double POOR_RATE = 0.10;
 
     private double baseTipPerBag;
     private int bagCount;
 
-    @Override
-    public void setServiceRating() {
-        //
-    }
-    public enum ServiceQuality {
-        GOOD, FAIR, POOR
-    }
     private ServiceQuality serviceQuality;
 
     public BaggageServiceTipCalculator(ServiceQuality q, int bags) {

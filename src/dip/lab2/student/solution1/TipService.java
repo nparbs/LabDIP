@@ -7,14 +7,8 @@ package dip.lab2.student.solution1;
 
 /**
  *
- * @author Nick
+ * @author nparbs
  */
-public interface TipCalculator {
+public class TipService {
     
-    public abstract double getTip();
-
-    //public abstract void setServiceRating();
-    
-
-    //public abstract void getServiceQuality();
 }
