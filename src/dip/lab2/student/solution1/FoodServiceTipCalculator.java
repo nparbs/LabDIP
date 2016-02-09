@@ -22,7 +22,7 @@ public class FoodServiceTipCalculator implements TipCalculator {
 
     @Override
     public void setServiceRating() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+//    //
     }
 
     public enum ServiceQuality {
@@ -35,6 +35,7 @@ public class FoodServiceTipCalculator implements TipCalculator {
         this.setBill(billAmt);
     }
 
+    @Override
     public double getTip() {
         double tip = 0.00; // always initialize local variables
 

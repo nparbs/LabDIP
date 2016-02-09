@@ -10,6 +10,8 @@ package dip.lab2.student.solution1;
  * @author Nick
  */
 public interface TipCalculator {
+    
+    public abstract double getTip();
 
     public abstract void setServiceRating();
     
