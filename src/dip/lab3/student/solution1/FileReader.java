@@ -3,16 +3,12 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package dip.lab2.student.solution1;
+package dip.lab3.student.solution1;
 
 /**
  *
  * @author Nick
  */
-public interface TipCalculator {
-
-    public abstract void setServiceRating();
+public class FileReader {
     
-
-    //public abstract void getServiceQuality();
 }
