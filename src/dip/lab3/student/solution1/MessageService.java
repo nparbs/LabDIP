@@ -9,11 +9,11 @@ package dip.lab3.student.solution1;
  *
  * @author Nick
  */
-public class CopyService {
+public class MessageService {
     private InputReader input;
     private OutputWriter output;
     
-    public CopyService(InputReader input, OutputWriter output) {
+    public MessageService(InputReader input, OutputWriter output) {
         this.input = input;
         this.output = output;
     }

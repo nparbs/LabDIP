@@ -26,6 +26,7 @@ public class Startup {
 
         // High-level module
         HRService hr = new HRService();
+        System.out.println(hr.getAnnualCompensationForEmployee(emp3));
 
         // Just utility code to format numbers nice.
         NumberFormat nf = NumberFormat.getCurrencyInstance();

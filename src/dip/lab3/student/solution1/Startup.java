@@ -13,23 +13,21 @@ public class Startup {
     
     public static void main(String[] args) {
         
-        InputReader[] readers = {new GUIInput(), new TextInput()};
         
-        for(InputReader r : readers) {
-           //r.readln();
-        }
-        
-       // InputReader input = new TextInput();
-       // OutputWriter output = new TextOutput();
+        // InputReader input = new TextInput();
+        // OutputWriter output = new TextOutput();
         InputReader input = new GUIInput();
         OutputWriter output = new GUIOutput();
-
         
+        //MessageService msg = new MessageService(input, output);
+        //msg.produceMessage();
 
-        CopyService copy = new CopyService(input, output);
-        copy.produceMessage();
-
-        
+        InputReader[] readers = {new GUIInput(), new TextInput()};
+        for(InputReader r : readers) {
+            MessageService msg = new MessageService(r, output);
+        msg.produceMessage();
+        }
+   
     }
     
 }
