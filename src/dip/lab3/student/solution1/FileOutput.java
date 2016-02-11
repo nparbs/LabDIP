@@ -7,9 +7,13 @@ package dip.lab3.student.solution1;
 
 /**
  *
- * @author nparbs
+ * @author Nick
  */
-public interface Reader {
+public class FileOutput implements OutputWriter {
 
-	public abstract String readln();
+        @Override
+	public void writeln(InputReader reader) {
+        //to file
+        }
+    
 }

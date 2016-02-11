@@ -11,8 +11,9 @@ import java.util.Scanner;
  *
  * @author Nick
  */
-public class TextReader implements Reader {
+public class TextInput implements InputReader {
 
+        @Override
 	public String readln() {
             System.out.println("Please enter text, then press enter.");
 

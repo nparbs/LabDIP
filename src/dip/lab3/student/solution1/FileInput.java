@@ -9,10 +9,6 @@ package dip.lab3.student.solution1;
  *
  * @author Nick
  */
-public class FileWriter implements Writer {
-
-	public void writeln(String line) {
-        //to file
-        }
+public class FileInput {
     
 }

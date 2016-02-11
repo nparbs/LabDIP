@@ -7,11 +7,9 @@ package dip.lab3.student.solution1;
 
 /**
  *
- * @author Nick
+ * @author nparbs
  */
-public class TextWriter implements Writer {
+public interface InputReader {
 
-	public void writeln( String line ) {
-            System.out.println( line );
-	}
+	public abstract Copier readln();
 }

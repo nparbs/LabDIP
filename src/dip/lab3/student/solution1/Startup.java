@@ -13,11 +13,24 @@ public class Startup {
     
     public static void main(String[] args) {
         
-        Reader[] readers = {new GUIReader(), new TextReader()};
+        InputReader[] readers = {new GUIInput(), new TextInput()};
         
-        for(Reader r : readers) {
+        for(InputReader r : readers) {
            r.readln();
         }
+        
+        InputReader input = new InputReader();
+        OutputWriter output = new OutputWriter();
+//        MessageOutputStrategy output = new JOptionPaneMessageOutputStrategy();
+        
+        // If you want to hear the audio output you need a computer that has
+        // speakers and an audio card.
+//        MessageInputStrategy input = new HelloAdvancedJavaAudioMessageInputStrategy();
+//        MessageOutputStrategy output = new HelloAdvJavaAudioMessageOutputStrategy();
+    
+        CopyService copy = new CopyService(input, output);
+        copy.produceMessage();
+
         
     }
     

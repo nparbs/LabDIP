@@ -5,16 +5,11 @@
  */
 package dip.lab3.student.solution1;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author nparbs
  */
-public class GUIWriter implements Writer {
-	
-        @Override
-	public void writeln( String line ) {
-            JOptionPane.showMessageDialog(null, line);
-	}
+public interface OutputWriter {
+
+	public void writeln(InputReader reader);
 }
