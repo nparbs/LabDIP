@@ -16,18 +16,16 @@ public class Startup {
         InputReader[] readers = {new GUIInput(), new TextInput()};
         
         for(InputReader r : readers) {
-           r.readln();
+           //r.readln();
         }
         
-        InputReader input = new InputReader();
-        OutputWriter output = new OutputWriter();
-//        MessageOutputStrategy output = new JOptionPaneMessageOutputStrategy();
+       // InputReader input = new TextInput();
+       // OutputWriter output = new TextOutput();
+        InputReader input = new GUIInput();
+        OutputWriter output = new GUIOutput();
+
         
-        // If you want to hear the audio output you need a computer that has
-        // speakers and an audio card.
-//        MessageInputStrategy input = new HelloAdvancedJavaAudioMessageInputStrategy();
-//        MessageOutputStrategy output = new HelloAdvJavaAudioMessageOutputStrategy();
-    
+
         CopyService copy = new CopyService(input, output);
         copy.produceMessage();
 

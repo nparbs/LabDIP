@@ -11,5 +11,6 @@ package dip.lab3.student.solution1;
  */
 public interface InputReader {
 
-	public abstract Copier readln();
+	//public abstract Copier readln();
+    public abstract String readln();
 }
