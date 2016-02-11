@@ -14,18 +14,22 @@ public class Startup {
     public static void main(String[] args) {
         
         
-        // InputReader input = new TextInput();
-        // OutputWriter output = new TextOutput();
-        InputReader input = new GUIInput();
-        OutputWriter output = new GUIOutput();
+ 
+        //InputReader input = new GUIInput();
+        InputReader input = new TextInput();
+        OutputWriter output = new TextOutput();
         
-        //MessageService msg = new MessageService(input, output);
-        //msg.produceMessage();
+        MessageService msgService = new MessageService(input, output);
+        msgService.produceMessage();
 
+        
+        
+        //loop
         InputReader[] readers = {new GUIInput(), new TextInput()};
+        OutputWriter output2 = new GUIOutput();
         for(InputReader r : readers) {
-            MessageService msg = new MessageService(r, output);
-        msg.produceMessage();
+            MessageService msgService2 = new MessageService(r, output2);
+        msgService2.produceMessage();
         }
    
     }
