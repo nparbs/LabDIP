@@ -10,10 +10,10 @@ package dip.lab3.student.solution1;
  * @author Nick
  */
 public class MessageService {
-    private InputReader input;
-    private OutputWriter output;
+    private InputMessage input;
+    private OutputMessage output;
     
-    public MessageService(InputReader input, OutputWriter output) {
+    public MessageService(InputMessage input, OutputMessage output) {
         this.input = input;
         this.output = output;
     }

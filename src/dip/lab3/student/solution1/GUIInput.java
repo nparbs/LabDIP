@@ -11,7 +11,7 @@ import javax.swing.JOptionPane;
  *
  * @author nparbs
  */
-public class GUIInput implements InputReader {
+public class GUIInput implements InputMessage {
 
     @Override
     public String readln() {

@@ -9,10 +9,10 @@ package dip.lab3.student.solution1;
  *
  * @author Nick
  */
-public class FileOutput implements OutputWriter {
+public class FileOutput implements OutputMessage {
 
         @Override
-	public void writeln(InputReader reader) {
+	public void writeln(InputMessage reader) {
         //to file
         }
     

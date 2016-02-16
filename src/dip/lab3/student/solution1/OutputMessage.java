@@ -9,8 +9,7 @@ package dip.lab3.student.solution1;
  *
  * @author nparbs
  */
-public interface InputReader {
+public interface OutputMessage {
 
-	//public abstract Copier readln();
-    public abstract String readln();
+	public void writeln(InputMessage reader);
 }

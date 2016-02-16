@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Nick
  */
-public class TextInput implements InputReader {
+public class TextInput implements InputMessage {
 
         @Override
 	public String readln() {

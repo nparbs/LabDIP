@@ -16,8 +16,8 @@ public class Startup {
         
  
         //InputReader input = new GUIInput();
-        InputReader input = new TextInput();
-        OutputWriter output = new TextOutput();
+        InputMessage input = new TextInput();
+        OutputMessage output = new TextOutput();
         
         MessageService msgService = new MessageService(input, output);
         msgService.produceMessage();
@@ -25,9 +25,9 @@ public class Startup {
         
         
         //loop
-        InputReader[] readers = {new GUIInput(), new TextInput()};
-        OutputWriter output2 = new GUIOutput();
-        for(InputReader r : readers) {
+        InputMessage[] readers = {new GUIInput(), new TextInput()};
+        OutputMessage output2 = new GUIOutput();
+        for(InputMessage r : readers) {
             MessageService msgService2 = new MessageService(r, output2);
         msgService2.produceMessage();
         }
